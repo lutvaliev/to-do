@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700;900&display=swap');
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+}
+.content{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.to-do_list{
+    width: 340px;
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+}
+.to-do_head{
+    height: 28px;
+    background-color: #FFDC40;
+    border-radius: 10px 10px 0 0;
+}
+.to-do_list .to-do_body{
+    padding: 12px 26px;
+}
+.to-do_list .to-do_body h2{
+    font-weight: 900;
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 17px;
+}
+.to-do_list .to-do_body h3{
+    text-align: right;
+    margin-bottom: 11px;
+}
+.to-do_list .to-do_body h3 .sort{
+    display: none;
+    width: 25px;
+    height: 15px;
+    cursor: pointer;
+    background-image: url('./img/sort.svg');
+    transition: .4s;
+}
+.to-do_list .to-do_body h3 .sort:hover{
+    background-image: url('./img/sort_hover.svg');
+}
+
+.to-do_list .to-do_body h3 .sort.active{
+    display: inline-block;
+}
+.to-do_list h3 .sort_2{
+    display: none;
+    cursor: pointer;
+    width: 25px;
+    height: 15px;
+    cursor: pointer;
+    background-image: url('./img/sort_2.svg');
+    transition: .4s;
+}
+.to-do_list h3 .sort_2:hover{
+    background-image: url('./img/sort_2_hover.svg');
+}
+.to-do_list h3 .sort_2.active{
+    display: inline-block;
+}
+.to-do_list .to-do_body form{
+    width: 100%;
+}
+.to-do_list .to-do_body .form-inputs{
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+}
+
+.to-do_list .to-do_body form .form-input{
+    width: 100%;
+    height: 40px;
+    position: relative;
+}
+
+.to-do_list .to-do_body form .form-input .delete{
+    width: 22px;
+    height: 22px;
+    background-image: url(./img/delete.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: .4s;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+.to-do_list .to-do_body form .form-input .delete:hover{
+   background-image: url(./img/delete_hover.svg);
+}
+.to-do_list .to-do_body form .form-input input{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    padding: 0 13px;
+    font-size: 18px;
+    font-weight: 400;
+    outline: none;
+    border: none;
+}
+.to-do_list .to-do_body form .form-button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 18px;
+}
+.to-do_list .to-do_body form .form-button button{
+    width: 170px;
+    height: 42px;
+    border-radius: 71px;
+    background-color: #833AE0;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    transition: .4s;
+}
+.to-do_list .to-do_body form .form-button button:hover{
+    background-color: #9953F1;
+}
+.to-do_list .to-do_body form .form-button button span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 71px;
+    background-color: #9953F1;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    transition: .4s;
+}
+.to-do_list .to-do_body form .form-button button:hover span{
+    background-color: #AA68FE;
+}
